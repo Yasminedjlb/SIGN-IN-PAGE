@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>صفحة تسجيل الدخول</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <!-- Header section -->
+        <header class="header">
+            <h1>سجل دخولك</h1>
+            <p>أهلاً بك! سجل بياناتك أدناه.</p>
+        </header>
+       
+        <!-- Form section -->
+        <form id="signInForm">
+            <!-- First name input -->
+            <label for="firstName">الاسم الأول:</label>
+            <input type="text" id="firstName" name="firstName" required>
+           
+            <!-- Last name input -->
+            <label for="lastName">اسم العائلة:</label>
+            <input type="text" id="lastName" name="lastName" required>
+           
+            <!-- Level of education input -->
+            <label for="level">الطور الدراسي:</label>
+            <select id="level" name="level" required>
+                <option value="">اختر الطور</option>
+                <option value="ابتدائي">ابتدائي</option>
+                <option value="متوسط">متوسط</option>
+                <option value="ثانوي">ثانوي</option>
+            </select>
+           
+            <!-- Submit button -->
+            <button type="submit">تسجيل الدخول</button>
+        </form>
+       
+        <!-- Banner to display user info -->
+        <div id="banner" class="banner">
+            <p id="bannerMessage"></p>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
