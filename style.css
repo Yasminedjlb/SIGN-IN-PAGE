@@ -1,64 +1,150 @@
-/* General styles */
+/* General Styling */
 body {
-    font-family: 'Arial', sans-serif;
     direction: rtl;
-    background-color: #f0f0f0; /* Light background */
-    color: #333; /* Text color */
+    font-family: 'Alexandria', sans-serif;
+    background-color: #FFFFFF;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    text-align: right;
 }
 
-/* Container styling */
+/* Background Image */
+.background-image {
+    position: absolute;
+    width: 600px;
+    height: 643px;
+    top: -372px;
+    left: -333px;
+    opacity: 0.5;
+    z-index: -1;
+}
+
+/* Container Styling */
 .container {
-    width: 50%;
+    width: 1440px;
+    height: 1053px;
     margin: auto;
     padding: 20px;
-    background-color: #fff; /* White container background */
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    position: relative;
 }
 
-/* Header styling */
-.header {
-    text-align: center;
-    margin-bottom: 20px;
+/* Welcome Text Styling */
+.welcome-text {
+    position: absolute;
+    width: 536px;
+    height: 42px;
+    top: 160px;
+    left: 161px;
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 300;
+    font-size: 14px;
+    line-height: 152%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #000000;
+    background: transparent;
 }
 
-/* Form styling */
+/* Welcome Back Text */
+.welcome-back {
+    position: absolute;
+    width: 334px;
+    height: 34px;
+    top: 109px;
+    left: 365px;
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 300;
+    font-size: 22.5px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #000000;
+    background: transparent;
+}
+
+/* Form Styling */
 form {
     display: flex;
     flex-direction: column;
+    gap: 15px;
 }
 
-label {
-    margin: 10px 0 5px;
+/* Input Rows */
+.input-row {
+    display: flex;
+    justify-content: space-between;
+    gap: 21px;
 }
 
-input, select {
-    padding: 10px;
-    margin-bottom: 15px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
+/* General Input Fields */
+.input-field {
+    width: 650px;
+    height: 58px;
+    border-radius: 7.5px;
+    border-width: 1.5px;
+    border-style: solid;
+    padding: 18px 21px;
+    font-family: 'Alexandria', sans-serif;
+    font-size: 14px;
+    background: #FFFFFF;
+    color: #000000;
 }
 
-button {
-    padding: 10px;
-    background-color: #008000; /* Green button */
-    color: #fff;
+/* Specific Input Fields */
+.email-phone {
+    background: #B9C5BD3D;
+    border: 1.5px solid #000000A8;
+}
+
+.password {
+    background: #B9C5BD3D;
+    border: 1.5px solid #1A1616B0;
+}
+
+.gender {
+    height: 59px;
+    background: #EEF1EF;
+    border: 1.5px solid #0000008C;
+}
+
+.education {
+    height: 59px;
+    background: #B9C5BD3D;
+    border: 1.5px solid #0000008C;
+}
+
+/* Forgot Password */
+.forgot-password {
+    position: absolute;
+    width: 111px;
+    height: 15px;
+    top: 583px;
+    left: 50px;
+    font-family: 'Alexandria', sans-serif;
+    font-weight: 300;
+    font-size: 12px;
+    line-height: 100%;
+    letter-spacing: 0%;
+    text-align: right;
+    color: #00A841;
+    background: transparent;
+}
+
+/* Submit Button */
+.submit-button {
+    width: 650px;
+    height: 63px;
+    border-radius: 8px;
     border: none;
-    border-radius: 5px;
+    padding: 18px 15px;
+    background: #004C1D;
+    color: #FFFFFF;
+    font-family: 'Alexandria', sans-serif;
+    font-size: 16px;
     cursor: pointer;
 }
 
-button:hover {
-    background-color: #006400; /* Dark green on hover */
-}
-
-/* Banner styling */
-.banner {
-    display: none; /* Hidden by default */
-    margin-top: 20px;
-    padding: 10px;
-    background-color: #e0ffe0; /* Light green background */
-    color: #333;
-    border: 1px solid #008000;
-    border-radius: 5px;
+.submit-button:hover {
+    background: #003715;
 }
