@@ -4,43 +4,37 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>صفحة تسجيل الدخول</title>
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
     <div class="container">
-        <!-- Header section -->
-        <header class="header">
-            <h1>سجل دخولك</h1>
-            <p>أهلاً بك! سجل بياناتك أدناه.</p>
-        </header>
-       
-        <!-- Form section -->
-        <form id="signInForm">
-            <!-- First name input -->
-            <label for="firstName">الاسم الأول:</label>
-            <input type="text" id="firstName" name="firstName" required>
-           
-            <!-- Last name input -->
-            <label for="lastName">اسم العائلة:</label>
-            <input type="text" id="lastName" name="lastName" required>
-           
-            <!-- Level of education input -->
-            <label for="level">الطور الدراسي:</label>
-            <select id="level" name="level" required>
-                <option value="">اختر الطور</option>
-                <option value="ابتدائي">ابتدائي</option>
-                <option value="متوسط">متوسط</option>
-                <option value="ثانوي">ثانوي</option>
-            </select>
-           
-            <!-- Submit button -->
-            <button type="submit">تسجيل الدخول</button>
-        </form>
-       
-        <!-- Banner to display user info -->
-        <div id="banner" class="banner">
-            <p id="bannerMessage"></p>
+        <img src="path-to-your-image.jpg" alt="Mandala Design" class="background-image">
+        <div class="welcome-back">عودًا حميدًا   سجل دخولك</div>
+        <div class="welcome-text">
+            نسعد بعودتك لمواصلة رحلتك العلمية، حيث يلتقي العلم بالإيمان، وتُبنى العقول لبناء مستقبلٍ مشرق. سجّل دخولك وكن جزءًا من رسالتنا
         </div>
+        <form id="registration-form">
+            <div class="input-row">
+                <input type="text" placeholder="الاسم" class="input-field">
+                <input type="text" placeholder="اللقب" class="input-field">
+            </div>
+            <input type="text" placeholder="ادخل بريدك الالكتروني او رقم الهاتف" class="input-field email-phone">
+            <input type="password" placeholder="كلمة السر" class="input-field password">
+            <input type="password" placeholder="كلمة السر" class="input-field password">
+            <select class="input-field gender">
+                <option value="" disabled selected>الجنس</option>
+                <option value="male">ذكر</option>
+                <option value="female">أنثى</option>
+            </select>
+            <select class="input-field education">
+                <option value="" disabled selected>اختر الطور الذي تدرسه</option>
+                <option value="primary">ابتدائي</option>
+                <option value="middle">متوسط</option>
+                <option value="high">ثانوي</option>
+            </select>
+            <button type="submit" class="submit-button">ارسل تسجيلك للجمعية</button>
+        </form>
+        <div class="forgot-password">هل نسيت كلمة السر ؟</div>
     </div>
     <script src="script.js"></script>
 </body>
